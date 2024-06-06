@@ -323,10 +323,12 @@ footer .container nav ul li a:hover {
 
 .left_side .controls img:nth-child(1):hover {
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 .left_side .controls img:nth-child(5):hover {
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 #projects .container h3 {
