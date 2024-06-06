@@ -64,7 +64,6 @@ section {
     height: 80vh;
     margin:0;
     display: flex;
-    overflow: hidden;
 }
 
 .row {
@@ -213,8 +212,8 @@ footer .container nav ul li a:hover {
 }
 
 #home .container button {
-    width: 14vw;
-    height: 6.2vh;
+    width: 16vw;
+    height: 6.8vh;
     margin-right: 2vw;
 }
 
@@ -237,7 +236,7 @@ footer .container nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 12vh;
-    height: 150vh;
+    height: 140vh;
     .container {
         display: flex;
         flex-direction: column;
@@ -253,7 +252,7 @@ footer .container nav ul li a:hover {
     width: 52%;
     margin-right: 5vw;
     padding: 0;
-    #type_btn {
+    .type_btn {
         background-color: rgba(0, 0, 0, 0);
         box-shadow: none;
         font-family: var(--font-large);
@@ -268,7 +267,9 @@ footer .container nav ul li a:hover {
 
 #projects .container .separater {
     width: 100%;
+    height: 68vh;
     display: flex;
+    margin-bottom: 14vh;
     .left_side {
         width: 50%;
         display: flex;
@@ -277,8 +278,8 @@ footer .container nav ul li a:hover {
         margin-right:6vw;
     }
     .right_side {
+        margin-top: 5vh;
         width: 80%;
-        height: 80%;
         background-size: cover;
         img {
             width: 100%;
@@ -300,7 +301,9 @@ footer .container nav ul li a:hover {
     grid-template-columns: 1fr 1fr;
     div {
         width: 100%;
-        height:100%;
+        height:12vh;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
     }
     h3 {
         color:var(--highlight-color);
@@ -326,6 +329,21 @@ footer .container nav ul li a:hover {
     transform: translateY(-2px);
 }
 
+#projects .container h3 {
+    font-size: 2.5vh;
+}
+
+#projects .container .row img:nth-child(2) {
+    margin: 0;
+}
+
+#projects .container .video {
+    margin-top: 4vh;
+    margin-bottom: 7vh;
+    width: 81%;
+    box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.15);
+}
+
 /*#endregion*/
 
 /* section - measurement*/
@@ -334,26 +352,18 @@ footer .container nav ul li a:hover {
     color:var(--bright-color);
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-    transform: translateY(-46vh);
+    padding-top: 30vw;
     z-index:2;
-    height:120vh
+    height:105vh;
 }
 
-#measurement .container h3 {
-    font-size: 2.5vh;
-}
-
-#measurement .container .row img:nth-child(2) {
-    margin: 0;
-}
-
-#measurement .container .video {
-    margin-top: 4vh;
-    margin-bottom: 7vh;
-    width: 60%;
-    box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.15);
+#measurement .container .outline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    img:nth-child(1) {
+        margin-right: -2px;
+    }
 }
 
 #measurement .container p {
@@ -371,6 +381,7 @@ footer .container nav ul li a:hover {
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin-top: 3vw;
     div {
         width:100%;
         display: flex;
@@ -382,7 +393,6 @@ footer .container nav ul li a:hover {
         display: flex;
         span {
             font-weight: 500;
-            margin-left: 1vh;
         }
     }
 }
@@ -424,6 +434,14 @@ input[type="checkbox"]:not(:checked) {
 }
 
 /*#endregion*/
+
+/* section - team*/
+/*#region*/
+#team {
+    overflow: hidden;
+}
+/*#endregion*/
+
 @media (min-width:1300px) {
     body::-webkit-scrollbar {
         width: 10px;
