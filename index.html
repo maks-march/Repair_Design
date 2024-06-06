@@ -60,17 +60,19 @@
     <section id = "home">
         <div class="container">
             <h1>
-                Turnkey Repair in the <br>city of Rostov-on-Don
+                TURNKEY REPAIR IN THE <br>CITY OF <span>ROSTOV-ON-DON</span>
             </h1>
             <p>
-                Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
+                Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from <br>cost of materials due to the organization of work
             </p>
-            <button>
-                CALCULATE THE COST
-            </button>
-            <button>
-                SUBMIT YOUR APPLICATION
-            </button>
+            <div>
+                <button>
+                    CALCULATE THE COST
+                </button>
+                <button>
+                    SUBMIT YOUR APPLICATION
+                </button>
+            </div>
         </div>
     </section>
 
@@ -78,66 +80,73 @@
         <div class="container">
             <ul>
                 <li>
-                    <button>
+                    <button id="type_btn" class="type_active">
                         ROSTOV-ON-DON, ADMIRAL
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button id="type_btn">
                         SOCHI THIEVES
                     </button>
                 </li>
                 <li>
-                    <button>
+                    <button id="type_btn">
                         ROSTOV-ON-DON, PATRIOTIC
                     </button>
                 </li>
             </ul>
-            <div>
+            <div class = "separater">
                 <div class="left_side">
                     <h2>
-                        COMPARED <br>PROJECTS
+                        COMPLETED <br>PROJECTS
                     </h2>
                     <p>
-                        Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
+                        Only a small part of the work performed by our company is presented <br>on the site. For 14 years on in the construction <br>market we have made happy more than 1000 families
                     </p>
                     <div class="info">
                         <div>
                             <h3>
                                 CITY:
                             </h3>
-                            <span>
+                            <span id ="city">
                                 Rostov-on-Don <br>LCD admiral
-                            </span>
-                        </div>
-                        <div>
-                            <h3>
-                                REPAIR TIME:
-                            </h3>
-                            <span>
-                                3.5 months
                             </span>
                         </div>
                         <div>
                             <h3>
                                 APARTMENT AREA:
                             </h3>
-                            <span>
+                            <span id ="size">
                                 81 m2
+                            </span>
+                        </div>
+                        <div>
+                            <h3>
+                                REPAIR TIME:
+                            </h3>
+                            <span id = "time">
+                                3.5 months
                             </span>
                         </div>
                         <div>
                             <h3>
                                 REPAIR COST:
                             </h3>
-                            <span>
+                            <span id = "cost">
                                 Upon request
                             </span>
                         </div>
                     </div>
                     <div class="controls">
-
+                        <img src="img/left.svg" id ="left">
+                        <img src="img/active_dot.svg" id ="dot1">
+                        <img src="img/unactive_dot.svg" id ="dot2">
+                        <img src="img/unactive_dot.svg" id ="dot3">
+                        <img src="img/right.svg" id ="right">
                     </div>
+                </div>
+                <div class="right_side">
+                    <img src="img/don_admiral1.jpg">
                 </div>
             </div>
         </div>
@@ -149,28 +158,36 @@
                 ONLINE CONTROL
             </h3>
             <div class="row">
-                <hr><img src="camera.svg" alt=""><hr>
+                <img src="img/line.svg"> 
+                <img src="img/camera.svg"> 
+                <img src="img/line.svg">
             </div>
-            <img src="video.jpg" alt="">
-            <div class="row"><hr><hr></div>
+            <img class ="video" src="img/video.jpg">
+            <div class="row">
+                <img src="img/line.svg">
+                <img src="img/line.svg">
+            </div>
             <p>
-                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
-                Leave a request below and you will receive a link to the broadcast.
+                At each facility, a camera is installed that broadcasts the progress of work on the <br>clock. At any time, you can go to our website and monitor the progress of work in <br>your apartment. You can watch the live broadcast from one of our facilities!
+                <br>Leave a request below and you will receive a link to the broadcast.
             </p>
             <form>
-                <label for="name">
-                    Name
-                    <input type="text" id ="name" placeholder="Your name:">
-                </label>
-                <label for="phone">
-                    Phone
-                    <input type="text" id ="phone" placeholder="Your phone number:">
-                </label>
-                <button>
-                    SUBMIT
-                </button>
+                <div>
+                    <label for="name">
+                        <span>Name</span>
+                        <input type="text" id ="name" placeholder="Your name:">
+                    </label>
+                    <label for="phone">
+                        <span>Phone</span>
+                        <input type="text" id ="phone" placeholder="Your phone number:">
+                    </label>
+                    <button>
+                        SUBMIT
+                    </button>
+                </div>
                 <label for="agreement">
-                    <input type="checkbox" id ="agreement">I agree to the processing of personal data
+                    <input type="checkbox" required id ="agreement">
+                    <span>I agree to the processing of personal data</span>
                 </label>
             </form>
         </div>
@@ -547,5 +564,6 @@ to Georgia for its professionalism and approach.
             </button>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
