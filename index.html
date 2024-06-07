@@ -157,7 +157,8 @@
                 <img src="img/camera.svg"> 
                 <img src="img/line.svg">
             </div>
-            <img class ="video" src="img/video.jpg">
+            <img id = "video" class ="video" src="img/video.jpg">
+            <iframe id ="frame" class="video_unactive" src="https://www.youtube.com/embed/xgZd_vFNkUs?si=jSBqwQpbWoMumsTp" frameborder="0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
         </div>
     </section>
 
@@ -199,11 +200,14 @@
                 TYPES OF REPAIR
             </h3>
             <div class="row">
-                <hr><img src="tools.svg" alt=""><hr>
+                <img src="img/line.svg">
+                <img src="img/tools.svg">
+                <img src="img/line.svg">
             </div>
             <div class="types">
                 <div class="type">
-                    <div>
+                    <img src="img/redecorating.jpg">
+                    <div class="text">
                         <h2>Redecorating</h2>
                         <ul>
                             <li>
@@ -234,7 +238,8 @@
                     </div>
                 </div>
                 <div class="type">
-                    <div>
+                    <img src="img/overhaul.jpg">
+                    <div class="text">
                         <h2>Overhaul</h2>
                         <ul>
                             <li>
@@ -265,7 +270,8 @@
                     </div>
                 </div>
                 <div class="type">
-                    <div>
+                    <img src="img/desrepair.jpg">
+                    <div class="text">
                         <h2>Designer Repair</h2>
                         <ul>
                             <li>
@@ -299,52 +305,53 @@
             <div class="request">
                 <div class="steps">
                     <div>
-                        <img src="step1.jpg">
+                        <img src="img/01.svg">
                         <span>
-                            Our specialist will arrive for measurements per day
-contact, or appoint a date convenient for you
+                            Our specialist will arrive for measurements per day<br>
+                            contact, or appoint a date convenient for you
                         </span>
                     </div>
                     <div>
-                        <img src="step2.jpg">
+                        <img src="img/02.svg">
                         <span>
                             Free metering
                         </span>
                     </div>
                     <div>
-                        <img src="step3.jpg">
+                        <img src="img/03.svg">
                         <span>
                             Free consultation
                         </span>
                     </div>
                     <div>
-                        <img src="step4.jpg">
+                        <img src="img/04.svg">
                         <span>
-                            Get a cost estimate and
+                            Get a cost estimate and<br>
                             the timing of your future repairs
                         </span>
                     </div>
                 </div>
                 <form>
                     <h2>
-                        Leave a request for free
+                        Leave a request for free<br>
                         departure of the measurer
                     </h2>
                     <form>
                         <label for="name">
-                            Name
+                            <span>Name</span>
                             <input type="text" id ="name" placeholder="Your name:">
                         </label>
                         <label for="phone">
-                            Phone
+                            <span>Phone</span>
                             <input type="text" id ="phone" placeholder="Your phone number:">
                         </label>
                         <label for="email">
-                            Email
+                            <span>Email</span>
                             <input type="text" id ="email" placeholder="Your email:">
                         </label>
                         <label for="agreement">
-                            <input type="checkbox" id ="agreement">I agree to the processing of personal data
+                            <input type="checkbox" required id ="agreement">
+                            <span>I agree to the processing of personal data</span>
                         </label>
                         <button>
                             CALL THE MEASURER
@@ -353,7 +360,7 @@ contact, or appoint a date convenient for you
                 </form>
             </div>
             <div class="hint">
-                <img src="hint.jpg">
+                <img src="img/hint.jpg">
             </div>
         </div>
     </section>

@@ -50,3 +50,12 @@ left_btn.addEventListener("click", () => {
         cost.innerHTML = costs[current_type];
     }
 });
+
+const video_img = document.getElementById("video");
+const video = document.getElementById("frame");
+video_img.addEventListener("click", () => {
+    console.log("shit)");
+    video.classList.remove("video_unactive");
+    video_img.classList.add("video_unactive");
+    video.classList.add("video_active");
+});

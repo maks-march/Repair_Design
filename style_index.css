@@ -76,6 +76,17 @@ section {
     }
 }
 
+input[type="checkbox"]:checked {
+    width: 1.2vw;
+    height:1.2vw;   
+    accent-color: var(--highlight-color);
+    background-color:var(--bright-color); 
+}
+input[type="checkbox"]:not(:checked) {
+    width: 1.2vw;
+    height:1.2vw; 
+}
+
 /* header - footer */
 /*#region*/
 header {
@@ -344,8 +355,25 @@ footer .container nav ul li a:hover {
     margin-bottom: 7vh;
     width: 81%;
     box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.15);
+    z-index: 3;
+    cursor: pointer;
 }
 
+#projects .container iframe {
+    margin-top: 4vh;
+    margin-bottom: 7vh;
+    width: 81%;
+    height: 40vw;
+    box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.15);
+}
+
+.video_active {
+    display:block;
+}
+
+.video_unactive {
+    display: none;
+}
 /*#endregion*/
 
 /* section - measurement*/
@@ -355,8 +383,9 @@ footer .container nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 30vw;
-    z-index:2;
+    z-index:0;
     height:105vh;
+    margin-bottom: 10vw;
 }
 
 #measurement .container .outline {
@@ -406,17 +435,6 @@ footer .container nav ul li a:hover {
     height:100%;
 }
 
-input[type="checkbox"]:checked {
-    width: 1.2vw;
-    height:1.2vw;   
-    accent-color: var(--highlight-color);
-    background-color:var(--bright-color); 
-}
-input[type="checkbox"]:not(:checked) {
-    width: 1.2vw;
-    height:1.2vw; 
-}
-
 #measurement .container form div label
 {
     width:30%;
@@ -440,8 +458,155 @@ input[type="checkbox"]:not(:checked) {
 /* section - team*/
 /*#region*/
 #team {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 170vh;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+#team .container h3 {
+    font-size: 1.5vw;
+}
+
+#team .container .row {
+    margin-bottom: 2vw;
+}
+
+#team .container .types {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    height: 50vw;
+}
+
+#team .container .types .type 
+{
+    width: 32%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    img {
+        width: 100%;
+    }
+    .text {
+        width: 80%;
+        transform: translateY(-10vw);
+        background-color: var(--bright-color);
+        padding-left: 2vw;
+        ul {
+            list-style-type:disc;
+            padding-left: 1.2vw;
+        }
+        .price {
+            background-color: var(--highlight-color);
+            width: 75%;
+            height: 3rem;
+            text-align: center;
+            align-content: center;
+            color: var(--bright-color);
+            font-weight: 500;
+            font-family: var(--font-large);
+        }
+        .price:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.request {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("img/city_back.jpg");
+    height: 85vh;
+}
+
+.request .steps {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 80%;
+    padding-left: 10%;
+    div {
+        display: flex;
+    }
+}
+
+.request form {
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin-right: 2vw;
+    height: 80%;
+    background-color: var(--dark-color);
+    color: var(--bright-color);
+    h2 {
+        font-size: 1.5vw;
+        font-family: var(--font-small);
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.request form button
+{
+    width:40%;
+    border-radius: 5px;
+    height:3vw;
+    align-self: flex-end;
+    margin-right: 3.3vw;
+    margin-top: 1.5vw;
+}
+
+.request form label
+{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.8vh;
+    margin-top: 3vw;
+    span {
+        font-weight: 500;
+    }
+    input {
+        background-color: rgba(0, 0, 0, 0);
+        width:100%;
+        outline: none;
+        border: 0;
+        margin-top: 1vh;
+        border-bottom: 0.1px solid var(--bright-color);
+        font-weight: 700;
+        color: var(--bright-color);
+    }
+}
+
+.request form label:nth-child(5) {
+    flex-direction: row;
+    margin-top: 1vw;
+    align-self: flex-start;
+    align-items: center;
+    span {
+        font-weight: 200;
+        padding-top: 1vh;
+    }
+}
+
+.hint {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /*#endregion*/
 
 @media (min-width:1300px) {
